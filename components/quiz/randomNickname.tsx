@@ -1,0 +1,75 @@
+export default function randomNickname() {
+  const pre: string[] = [
+    "행복한",
+    "광란의",
+    "멋진",
+    "조그마한",
+    "행운의",
+    "빠른",
+    "달콤한",
+    "밝은",
+    "착한",
+    "똑똑한",
+    "용감한",
+    "귀여운",
+    "부자",
+    "용감한",
+    "놀라운",
+    "효도하는",
+    "여유로운",
+    "강한",
+    "신나는",
+    "배고픈",
+    "매콤한",
+    "부드러운",
+    "따뜻한",
+    "일침하는",
+    "달콤한",
+    "신비한",
+    "까칠한",
+    "졸린",
+    "짖는",
+    "나서는",
+  ];
+  const animal: string[] = [
+    "사자",
+    "호랑이",
+    "늑대",
+    "곰",
+    "독수리",
+    "여우",
+    "상어",
+    "원숭이",
+    "뱀",
+    "토끼",
+    "코끼리",
+    "치타",
+    "판다",
+    "하마",
+    "기린",
+    "오리",
+    "코뿔소",
+    "닭",
+    "돼지",
+    "고양이",
+    "거북이",
+    "악어",
+    "캥거루",
+    "앵무새",
+    "햄스터",
+    "메뚜기",
+    "고래",
+    "강아지",
+    "오징어",
+    "낙타",
+    "알파카",
+  ];
+
+  const getRandomElement = (arr: string[]) =>
+    arr[Math.floor(Math.random() * arr.length)];
+
+  const selectedPre = getRandomElement(pre);
+  const selectedAnimal = getRandomElement(animal);
+
+  return `${selectedPre} ${selectedAnimal}`;
+}
