@@ -1,6 +1,5 @@
 "use server";
 import { NextResponse, NextRequest } from "next/server";
-import { getQuiz, createQuiz } from "../../../../../libs/actions/quiz.action";
 import { Quiz } from "../../../../../libs/models/quiz.model";
 import connectDB from "../../../../../libs/connect-db";
 import { createErrorResponse } from "../../../../../libs/utils";

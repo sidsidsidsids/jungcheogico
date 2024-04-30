@@ -1,10 +1,5 @@
 "use server";
 import { NextResponse, NextRequest } from "next/server";
-import {
-  getComment,
-  postComment,
-  deleteComment,
-} from "../../../../../libs/actions/comment.action";
 import { Comment } from "../../../../../libs/models/comment.model";
 import connectDB from "../../../../../libs/connect-db";
 import {
