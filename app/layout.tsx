@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Roboto, Noto_Sans_KR } from "next/font/google";
 import "./globals.css";
+import { GoogleAnalytics } from '@next/third-parties/google'
 
 const roboto = Roboto({
   subsets: ["latin"],
@@ -29,6 +30,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${roboto.variable} ${noto_sans_kr.variable}`}>
       <body>{children}</body>
+      <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GA_ID ? process.env.NEXT_PUBLIC_GA_ID : ""} />
     </html>
   );
 }
