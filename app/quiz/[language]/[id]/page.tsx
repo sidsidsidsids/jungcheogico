@@ -3,19 +3,22 @@ interface QuizPageParams {
   params: { language: string; id: number };
 }
 async function fetchQuiz(language: string, id: number) {
-  const res = await fetch(`${process.env.API_URI}/quiz/${language}/${id}`, {
-    method: "GET",
-    headers: {
-      "Content-Type": "application/json",
-    },
-    cache: "no-store",
-  });
+  const res = await fetch(
+    `${process.env.NEXT_PUBLIC_API_URI}/quiz/${language}/${id}`,
+    {
+      method: "GET",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      cache: "no-store",
+    }
+  );
   const json = await res.json();
   return json;
 }
 async function fetchComment(language: string, id: number) {
   const res = await fetch(
-    `${process.env.API_URI}/comment/${language}/${id}`,
+    `${process.env.NEXT_PUBLIC_API_URI}/comment/${language}/${id}`,
     {
       method: "GET",
       headers: {

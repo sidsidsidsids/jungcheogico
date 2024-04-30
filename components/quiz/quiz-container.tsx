@@ -51,7 +51,7 @@ async function createComment(
   date: Date
 ) {
   const res = await fetch(
-    `${process.env.API_URI}/comment/${language}/${id}`,
+    `${process.env.NEXT_PUBLIC_API_URI}/comment/${language}/${id}`,
     {
       method: "POST",
       headers: {
@@ -72,9 +72,9 @@ async function createComment(
 }
 
 async function deleteComment(language: string, quizid: number, id: any) {
-  const userInput = prompt("해당 댓글의 비밀번호를 입력해주세요 ");
+  const userInput = prompt("해당 댓글의 비밀번호를 입력해주세요 (4~8자리)");
   const res = await fetch(
-    `${process.env.API_URI}/api/comment/${language}/${quizid}`,
+    `${process.env.NEXT_PUBLIC_API_URI}/comment/${language}/${quizid}`,
     {
       method: "DELETE",
       headers: {
@@ -252,6 +252,7 @@ export default function QuizContainer({
       set_msg("댓글 작성 성공");
       setErr(false);
       setSuccess(true);
+      set_open_comment(true);
       setTimeout(() => {
         setSuccess(false);
       }, 3000);
