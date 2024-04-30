@@ -220,7 +220,7 @@ export default function QuizContainer({
 
     const result = await createComment(
       language,
-      quizId,
+      Number(quizId),
       writer,
       passwordRef.current.value,
       contentRef.current.value,
