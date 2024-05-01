@@ -6,7 +6,7 @@ import "../../../globals.css";
 
 export const metadata: Metadata = {
   title: "문제 풀이",
-  description: "정보처리기사 C 자바 파이썬",
+  description: "정보처리기사 C 자바 파이썬 기출",
 };
 
 export default function RootLayout({
