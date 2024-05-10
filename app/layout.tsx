@@ -15,8 +15,8 @@ const noto_sans_kr = Noto_Sans_KR({
 });
 
 export const metadata: Metadata = {
-  title: "정처기코",
-  description: "정보처리기사 필기/실기 기출 코딩 문제 솔루션 정처기코",
+  title: "정보처리기사 코딩 문제 솔루션 정처기코",
+  description: "정보처리기사 필기 실기 기출 유사 문제 모음",
   verification: {
     google: "guQCftdu30zlgxl75BY6MUhML3d7lYtkgtjZFXFTjSA",
     other: {
