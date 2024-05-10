@@ -5,8 +5,8 @@ import { Suspense } from "react";
 import "../../../globals.css";
 
 export const metadata: Metadata = {
-  title: "문제 풀이",
-  description: "정보처리기사 C 자바 파이썬 기출",
+  title: "정보처리기사 코딩 문제 풀이",
+  description: "정보처리기사 C Java Python 기출",
 };
 
 export default function RootLayout({
