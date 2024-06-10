@@ -33,7 +33,7 @@ export default function LanguageButton({
         </div>
       </Link>
       {bookmarkId !== -1 ? (
-        <Link href={`quiz/${language}/${bookmarkId}`}>
+        <Link href={`quiz/${language}/${bookmarkId}`} prefetch={true}>
           <div
             className="absolute bottom-0 right-0 bg-green-400 w-20 sm:w-24 h-6 sm:h-8 border-2 border-slate-100 rounded-lg text-center text-white text-xs sm:text-base font-noto_sans_kr transition-colors duration-200 ease-in-out hover:bg-green-600"
             onClick={() => {
