@@ -10,7 +10,7 @@ async function fetchQuiz(language: string, id: number) {
       headers: {
         "Content-Type": "application/json",
       },
-      cache: "no-store",
+      cache: "default",
     }
   );
   const json = await res.json();
